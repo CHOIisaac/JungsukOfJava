@@ -1,0 +1,15 @@
+// -5 ~ 5 사이의 임의의 정수 출력하기
+
+public class nuli {
+
+	public static void main(String[] args) {
+		int num = 0;
+		
+		for(int i = 0; i < 5; i+=1) {
+			num = (int)(Math.random()*11)-5;
+			System.out.println(num);
+		}
+		
+	}
+
+}
