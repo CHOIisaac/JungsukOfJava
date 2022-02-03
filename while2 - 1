@@ -1,0 +1,15 @@
+// 100부터 몇까지 빼야 0을 밑으로 떨어지 않는지 ?
+
+public class nuli {
+
+	public static void main(String[] args) {
+			int i = 0, sum = 100;
+			
+			while(sum >= 0) {
+				System.out.printf("%d - %d%n", i, sum);
+				sum -= ++i;
+			}
+		
+	}
+
+}
