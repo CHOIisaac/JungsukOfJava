@@ -1,0 +1,22 @@
+//1~10까지의 숫자를 출력하되 3의 배수는 제외하기 
+
+public class nuli {
+
+	public static void main(String[] args) {
+		for(int i = 1; i <= 10; i++) {
+			if(i % 3 == 0) 
+				continue;
+				System.out.println(i);
+			
+		}
+		
+		for(int i = 1; i <= 10; i++) {
+			if(i % 3 !=0) {
+				System.out.println(i);
+			}
+		}
+		
+		
+	}
+
+}
