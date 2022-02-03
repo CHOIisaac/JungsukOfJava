@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+// 숫자를 입력받고 각 자리의 숫자 합 구하
+
+public class nuli {
+
+	public static void main(String[] args) {
+			int sum = 0;
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("숫자를 입력하세요.");
+			int num = scanner.nextInt();
+			
+			for(; num>0; num/=10) {
+				sum += num % 10;
+				System.out.printf("sum=%3d num=%d%n", sum, num);
+			}
+			System.out.println(sum);
+	}
+
+}
