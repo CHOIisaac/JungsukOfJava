@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+// 1~100사이의 임의의 수를 변수 answer에 저장하고, 이 값을 맞출때까지 반복하기
+
+public class nuli {
+
+	public static void main(String[] args) {
+		int input = 0, answer = 0;
+		answer = (int)(Math.random()*100)+1;
+		System.out.print("1과 100사이의 숫자를 입력하세요.>");
+		Scanner scanner = new Scanner(System.in);
+		input = scanner.nextInt();
+		
+		for(; ;) {
+			if(input > answer) {
+				System.out.print("더 작은 수를 입력하세요.>");
+				input = scanner.nextInt();
+			}else if(input < answer){
+				System.out.print("더 큰 수를 입력하세요.>");
+				input = scanner.nextInt();
+			}else if(input==answer) {
+				System.out.println("정답입니다!");
+				break;
+			}
+		}	
